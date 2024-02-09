@@ -18,8 +18,8 @@ def get_gimini_response(input):
 
 input_prompt = """
 Act like a skilled and professional chef who knows every cuisine and dishes.
-I will give you the sambar , generate the recipe of that sambar along with 
-time for cooking, ingredients for sambar and steps of cooking that.
+I will give you the {{dish_name}} , generate the recipe of that {{dish_name}} along with 
+time for cooking, ingredients for {{dish_name}} and steps of cooking that.
 
 I want the response having the structure
 {{"Time":"","Ingredients":[],"Steps":[]}}

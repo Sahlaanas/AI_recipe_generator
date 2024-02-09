@@ -12,21 +12,11 @@ from PIL import Image
 image = Image.open("C:/Users/user/Downloads/img.png")
 load_dotenv()
 API_KEY = os.getenv("API_KEY")
-# API_KEY = "AIzaSyDN8S3Q8N_6hyK4pXMG9Cn-8wsRpI9SlP8"
 
 llm = GoogleGenerativeAI(model="models/text-bison-001", google_api_key=API_KEY)
 
 
-# load_dotenv()
 
-# import google.generativeai as genai
-
-# API_KEY = "AIzaSyDN8S3Q8N_6hyK4pXMG9Cn-8wsRpI9SlP8"
-# #genai.configure(api_key=API_KEY)
-# llm=GooglePalm(
-#     google_api_key=API_KEY,
-#     temperature=0.5
-# )
 
 
 class Recipe(BaseModel):
